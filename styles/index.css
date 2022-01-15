@@ -1,0 +1,76 @@
+:root {
+    box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(134, 163, 165);
+  font-family: fantasy;
+  font-style: italic;
+  text-shadow: silver;
+  font-size: large;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.headerTitle {
+  margin: auto;
+}
+
+.mainContainer {
+  width: 70%;
+  margin: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: 
+    "avatar bio bio bio";
+  gap: 2rem;
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-areas:
+            "avatar"
+            "bio";
+    }
+
+    .mainContainer {
+        width: 90%;
+    }
+}
+
+.avatar {
+    grid-area: "avatar";
+}
+
+.bio {
+  grid-area: "bio";
+}
+
+
+.dp {
+    width: 100%;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialLinkImage {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.article {
+    border: 5px dashed red;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
