@@ -3,7 +3,8 @@
 }
 
 body {
-  background-color: lightslategrey;
+  
+  background-color: rgb(134, 163, 165);
   background-size: cover;
   font-family: fantasy;
   font-style: italic;
@@ -71,7 +72,7 @@ body {
 }
 
 .article {
-    border: 5px dashed rgb(107, 6, 6);
+    border: 5px dashed red;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
 }
